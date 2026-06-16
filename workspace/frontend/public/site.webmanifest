@@ -1,0 +1,8 @@
+{
+  "name": "AgentHive",
+  "short_name": "AgentHive",
+  "icons": [],
+  "theme_color": "#060b14",
+  "background_color": "#060b14",
+  "display": "standalone"
+}

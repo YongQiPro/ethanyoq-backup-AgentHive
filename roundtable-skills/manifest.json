@@ -1,0 +1,102 @@
+{
+  "generated_at": "2026-06-12",
+  "method": "nuwa-skill single-agent adaptation",
+  "skills": [
+    {
+      "id": "musk-first-principles-perspective",
+      "type": "person",
+      "label": "Musk-style First Principles Agent",
+      "path": "roundtable-skills/musk-first-principles-perspective/SKILL.md"
+    },
+    {
+      "id": "bezos-customer-flywheel-perspective",
+      "type": "person",
+      "label": "Bezos-style Customer & Flywheel Agent",
+      "path": "roundtable-skills/bezos-customer-flywheel-perspective/SKILL.md"
+    },
+    {
+      "id": "jobs-product-narrative-perspective",
+      "type": "person",
+      "label": "Jobs-style Product & Narrative Agent",
+      "path": "roundtable-skills/jobs-product-narrative-perspective/SKILL.md"
+    },
+    {
+      "id": "thiel-contrarian-monopoly-perspective",
+      "type": "person",
+      "label": "Thiel-style Contrarian & Monopoly Agent",
+      "path": "roundtable-skills/thiel-contrarian-monopoly-perspective/SKILL.md"
+    },
+    {
+      "id": "grove-strategic-inflection-perspective",
+      "type": "person",
+      "label": "Grove-style Strategic Inflection Agent",
+      "path": "roundtable-skills/grove-strategic-inflection-perspective/SKILL.md"
+    },
+    {
+      "id": "walton-channel-execution-perspective",
+      "type": "person",
+      "label": "Walton-style Channel & Execution Agent",
+      "path": "roundtable-skills/walton-channel-execution-perspective/SKILL.md"
+    },
+    {
+      "id": "drucker-management-critic-perspective",
+      "type": "person",
+      "label": "Drucker-style Management Critic",
+      "path": "roundtable-skills/drucker-management-critic-perspective/SKILL.md"
+    },
+    {
+      "id": "fact-pack-keeper",
+      "type": "functional",
+      "label": "Fact Pack Keeper",
+      "path": "roundtable-skills/fact-pack-keeper/SKILL.md"
+    },
+    {
+      "id": "policy-research-agent",
+      "type": "functional",
+      "label": "Policy Research Agent",
+      "path": "roundtable-skills/policy-research-agent/SKILL.md"
+    },
+    {
+      "id": "market-research-agent",
+      "type": "functional",
+      "label": "Market Research Agent",
+      "path": "roundtable-skills/market-research-agent/SKILL.md"
+    },
+    {
+      "id": "medical-evidence-research-agent",
+      "type": "functional",
+      "label": "Medical Evidence Research Agent",
+      "path": "roundtable-skills/medical-evidence-research-agent/SKILL.md"
+    },
+    {
+      "id": "company-context-agent",
+      "type": "functional",
+      "label": "Company Context Agent",
+      "path": "roundtable-skills/company-context-agent/SKILL.md"
+    },
+    {
+      "id": "roundtable-chair",
+      "type": "functional",
+      "label": "Roundtable Chair",
+      "path": "roundtable-skills/roundtable-chair/SKILL.md"
+    },
+    {
+      "id": "summary-agent",
+      "type": "functional",
+      "label": "Summary Agent",
+      "path": "roundtable-skills/summary-agent/SKILL.md"
+    },
+    {
+      "id": "devils-advocate-agent",
+      "type": "functional",
+      "label": "Devil's Advocate Agent",
+      "path": "roundtable-skills/devils-advocate-agent/SKILL.md"
+    },
+    {
+      "id": "consensus-builder-agent",
+      "type": "functional",
+      "label": "Consensus Builder Agent",
+      "path": "roundtable-skills/consensus-builder-agent/SKILL.md"
+    }
+  ]
+}

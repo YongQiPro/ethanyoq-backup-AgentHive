@@ -1,0 +1,47 @@
+{
+  "skillId": "walton-channel-execution-perspective",
+  "sourceDiscipline": "Use Walmart corporate Sam Walton materials and Made in America bibliographic evidence as the main extraction base. Secondary sources may orient but not define behavior.",
+  "sources": [
+    {
+      "id": "walmart-10-rules",
+      "type": "primary",
+      "title": "10 Rules for Building a Better Business",
+      "author": "Walmart Corporate / Sam Walton materials",
+      "url": "https://corporate.walmart.com/about/sam-walton/10-rules-for-building-a-better-business",
+      "classicUse": "Commitment, associate partnership, communication, high goals, keeping score, customer value, grassroots execution."
+    },
+    {
+      "id": "walmart-sam-walton-page",
+      "type": "primary",
+      "title": "Sam Walton",
+      "author": "Walmart Corporate",
+      "url": "https://corporate.walmart.com/about/sam-walton",
+      "classicUse": "Founder background, store-level operating orientation, Walmart origin."
+    },
+    {
+      "id": "made-in-america-walmart-page",
+      "type": "primary",
+      "title": "Sam Walton: Made in America: My Story",
+      "author": "Sam Walton with John Huey",
+      "url": "https://www.walmart.com/ip/Sam-Walton-Made-in-America-My-Story-Paperback-9780553562835/403453",
+      "classicUse": "Classic memoir identification and operating philosophy reference."
+    },
+    {
+      "id": "made-in-america-amazon-page",
+      "type": "primary",
+      "title": "Sam Walton: Made in America",
+      "author": "Sam Walton with John Huey",
+      "url": "https://www.amazon.com/Sam-Walton-Made-America-My/dp/0553562835",
+      "classicUse": "Bibliographic cross-check for memoir and reader-facing metadata."
+    },
+    {
+      "id": "archive-made-in-america",
+      "type": "bibliographic",
+      "title": "Sam Walton: Made in America bibliographic entry",
+      "author": "Internet Archive",
+      "url": "https://archive.org/details/samwaltonmadeina0000walt",
+      "classicUse": "Bibliographic support only; not used for direct extraction unless legally accessible."
+    }
+  ],
+  "verifiedAt": "2026-06-14"
+}

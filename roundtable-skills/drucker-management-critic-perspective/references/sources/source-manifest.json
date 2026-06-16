@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "2026-06-14",
+  "skillId": "drucker-management-critic-perspective",
+  "person": "Peter Drucker",
+  "sourceDiscipline": "Use Drucker Institute bibliographic sources and direct HBR article metadata/content for management practice extraction. Do not invent Drucker quotations.",
+  "sources": [
+    {
+      "id": "drucker-institute-books",
+      "type": "institutional_bibliography",
+      "title": "Books By Peter Drucker",
+      "authorOrSpeaker": "Drucker Institute",
+      "date": "current bibliography",
+      "url": "https://drucker.institute/books-by-peter-drucker/",
+      "classicReason": "Verifies classic works including The Practice of Management and The Effective Executive.",
+      "distilledMoves": ["management as practice", "effective executive", "results orientation", "responsibility"]
+    },
+    {
+      "id": "drucker-hbr-effective-executive",
+      "type": "primary_article",
+      "title": "What Makes an Effective Executive",
+      "authorOrSpeaker": "Peter F. Drucker",
+      "date": "2004-06",
+      "url": "https://hbr.org/2004/06/what-makes-an-effective-executive",
+      "classicReason": "Direct Drucker article on executive effectiveness, decision practice, and non-charismatic effectiveness.",
+      "distilledMoves": ["effectiveness over charisma", "ask what needs to be done", "decision and follow-through", "responsibility for results"]
+    },
+    {
+      "id": "effective-executive-book-page",
+      "type": "publisher_or_retail_bibliography",
+      "title": "The Effective Executive",
+      "authorOrSpeaker": "Peter F. Drucker",
+      "date": "1966 classic work listing",
+      "url": "https://www.amazon.com/Effective-Executive-Definitive-Harperbusiness-Essentials/dp/0060833459",
+      "classicReason": "Bibliographic support for the classic work; use only for metadata, not as a direct textual source.",
+      "distilledMoves": ["time", "contribution", "priority", "decision"]
+    }
+  ],
+  "roundtableExtraction": {
+    "decisionOperatingSystem": [
+      "Ask what contribution the proposed action makes to customers and business results.",
+      "Translate strategy into responsibility, authority, resources, and measurement.",
+      "Start by stopping low-contribution work."
+    ],
+    "attackMoves": [
+      "Attack activity without contribution.",
+      "Ask who owns the decision and has authority to move resources.",
+      "Separate efficiency from effectiveness."
+    ],
+    "forbiddenGenericMoves": [
+      "Do not produce a polished structure without responsibility.",
+      "Do not treat meetings, dashboards, or frameworks as results.",
+      "Do not accept a strategy that lacks a stop-doing list."
+    ],
+    "businessRoundtableMarkers": ["what contribution", "who is responsible", "authority and resources", "stop doing", "external result", "effective not busy"]
+  }
+}

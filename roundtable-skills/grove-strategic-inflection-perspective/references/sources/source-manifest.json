@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "2026-06-14",
+  "skillId": "grove-strategic-inflection-perspective",
+  "person": "Andrew Grove",
+  "sourceDiscipline": "Use the classic book and direct lecture materials for strategic inflection behavior; use publisher pages for bibliographic verification.",
+  "sources": [
+    {
+      "id": "grove-only-the-paranoid-survive-prh",
+      "type": "publisher_classic_work",
+      "title": "Only the Paranoid Survive",
+      "authorOrSpeaker": "Andrew S. Grove",
+      "date": "1999 paperback listing",
+      "url": "https://www.penguinrandomhouse.com/books/72469/only-the-paranoid-survive-by-andrew-grove/",
+      "classicReason": "Publisher description identifies Strategic Inflection Point as the core concept and frames massive change as rule-breaking pressure.",
+      "distilledMoves": ["strategic inflection point", "massive change", "ordinary rules stop working", "crisis as opportunity"]
+    },
+    {
+      "id": "grove-mit-industry-leaders",
+      "type": "primary_lecture",
+      "title": "MIT Industry Leaders Program lecture listing/video",
+      "authorOrSpeaker": "Andrew S. Grove",
+      "date": "public lecture",
+      "url": "https://www.youtube.com/watch?v=poLB031d4jE",
+      "classicReason": "Direct public lecture source for Grove's management and strategic framing.",
+      "distilledMoves": ["challenge leaders with uncomfortable facts", "separate signal from noise", "force operating implications"]
+    },
+    {
+      "id": "wired-1996-review",
+      "type": "secondary",
+      "title": "Wired review of Only the Paranoid Survive",
+      "authorOrSpeaker": "Wired",
+      "date": "1996",
+      "url": "https://www.wired.com/1996/12/just-outta-beta",
+      "classicReason": "Contemporary secondary review; useful for reception context only.",
+      "distilledMoves": ["contemporary reception", "managerial crisis framing"]
+    }
+  ],
+  "roundtableExtraction": {
+    "decisionOperatingSystem": [
+      "Ask whether a 10x external change is forcing a new resource allocation.",
+      "Separate real inflection from ordinary optimization.",
+      "Turn warning signs into resource migration, not slogans."
+    ],
+    "attackMoves": [
+      "Ask what external force punishes the old model.",
+      "Demand leading indicators from edge customers and frontline teams.",
+      "Expose how the organization will defend the old profit pool."
+    ],
+    "forbiddenGenericMoves": [
+      "Do not call every change a strategic inflection point.",
+      "Do not accept responsibility assignments without real resource migration.",
+      "Do not soothe the room; force the hard choice."
+    ],
+    "businessRoundtableMarkers": ["10x change", "strategic inflection point", "old rules break", "resource migration", "frontline signal", "organizational denial"]
+  }
+}

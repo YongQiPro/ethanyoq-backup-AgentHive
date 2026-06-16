@@ -1,0 +1,47 @@
+{
+  "skillId": "bezos-customer-flywheel-perspective",
+  "sourceDiscipline": "Use primary or official Amazon shareholder-letter sources for method extraction. Secondary summaries can orient the search but must not define role behavior.",
+  "sources": [
+    {
+      "id": "bezos-1997-shareholder-letter",
+      "type": "primary",
+      "title": "Amazon.com 1997 Letter to Shareholders",
+      "author": "Jeff Bezos",
+      "url": "https://media.corporate-ir.net/media_files/irol/97/97664/reports/Shareholderletter97.pdf",
+      "classicUse": "Long-term orientation, customer value, market leadership, word-of-mouth and repeat purchase flywheel."
+    },
+    {
+      "id": "bezos-2016-shareholder-letter",
+      "type": "primary",
+      "title": "2016 Letter to Shareholders",
+      "author": "Jeff Bezos",
+      "url": "https://www.aboutamazon.com/news/company-news/2016-letter-to-shareholders",
+      "classicUse": "Day 1 defense, customer obsession, proxy skepticism, external trends, high-velocity decision making."
+    },
+    {
+      "id": "bezos-2020-shareholder-letter",
+      "type": "primary",
+      "title": "2020 Letter to Shareholders",
+      "author": "Jeff Bezos",
+      "url": "https://www.aboutamazon.com/news/company-news/2020-letter-to-shareholders",
+      "classicUse": "Risk, invention, scale, employee/customer framing and long-horizon compounding."
+    },
+    {
+      "id": "amazon-sec-1997-reprint",
+      "type": "primary",
+      "title": "SEC exhibit reprinting Amazon 1997 Letter",
+      "author": "Amazon.com, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000119312517120198/d373368dex991.htm",
+      "classicUse": "Cross-check for the 1997 letter and continuing Day 1 framing."
+    },
+    {
+      "id": "aws-day-one-culture",
+      "type": "official_secondary",
+      "title": "Elements of Amazon's Day One Culture",
+      "author": "AWS / Amazon",
+      "url": "https://d1.awsstatic.com/executive-insights/en_US/ElementsofAmazonsDayOneCulture.pdf",
+      "classicUse": "Official Amazon interpretation of Day 1 as operating model. Use only after primary letters."
+    }
+  ],
+  "verifiedAt": "2026-06-14"
+}

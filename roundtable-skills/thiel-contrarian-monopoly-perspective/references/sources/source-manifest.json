@@ -1,0 +1,47 @@
+{
+  "skillId": "thiel-contrarian-monopoly-perspective",
+  "sourceDiscipline": "Use Zero to One and the CS183 notes as the main extraction base. Treat secondary summaries as orientation only.",
+  "sources": [
+    {
+      "id": "zero-to-one-book-page",
+      "type": "primary",
+      "title": "Zero to One: Notes on Startups, or How to Build the Future",
+      "author": "Peter Thiel with Blake Masters",
+      "url": "https://www.amazon.com/Zero-One-Notes-Startups-Future/dp/0804139296",
+      "classicUse": "Contrarian question, 0-to-1 innovation, escaping competition, singular companies."
+    },
+    {
+      "id": "cs183-notes-index",
+      "type": "quasi_primary",
+      "title": "Peter Thiel's CS183: Startup - Stanford, Spring 2012",
+      "author": "Blake Masters from Peter Thiel lectures",
+      "url": "https://blakemasters.tumblr.com/peter-thiels-cs183-startup",
+      "classicUse": "Lecture-derived material behind Zero to One; use for class topics such as secrets, last mover advantage, distribution, value systems."
+    },
+    {
+      "id": "cs183-class-4-last-mover",
+      "type": "quasi_primary",
+      "title": "CS183 Class 4: The Last Mover Advantage",
+      "author": "Blake Masters from Peter Thiel lectures",
+      "url": "https://blakemasters.tumblr.com/post/21691773017/peter-thiels-cs183-startup-class-4-notes-essay",
+      "classicUse": "Monopoly, durability, competitive structure, last mover logic."
+    },
+    {
+      "id": "cs183-class-11-secrets",
+      "type": "quasi_primary",
+      "title": "CS183 Class 11: Secrets",
+      "author": "Blake Masters from Peter Thiel lectures",
+      "url": "https://blakemasters.tumblr.com/post/23435743973/peter-thiels-cs183-startup-class-11-notes-essay",
+      "classicUse": "Secrets, hidden truths, why important opportunities are overlooked."
+    },
+    {
+      "id": "competition-is-for-losers",
+      "type": "primary",
+      "title": "Competition Is for Losers",
+      "author": "Peter Thiel",
+      "url": "https://www.wsj.com/articles/peter-thiel-competition-is-for-losers-1410535536",
+      "classicUse": "Competition versus monopoly framing. Use only when accessible; otherwise rely on book and CS183 notes."
+    }
+  ],
+  "verifiedAt": "2026-06-14"
+}

@@ -1,10 +1,18 @@
 <div align="center">
 
-# AgentHive
+# AgentHive - AI Decision and Multi-Agent Strategy Workspace
 
-**An AI roundtable workspace for business strategy: give one problem to a configurable group of agents and let them reason through views, evidence, risks, and final synthesis.**
+**AgentHive is a local AI decision, AI advisor, and multi-agent strategy workspace for founders, product leaders, and business teams: give one question to configurable agents and let them reason through views, evidence, risks, and final synthesis.**
 
 [中文](README.md) | [Screenshots](#screenshots) | [Quick Start](#quick-start) | [Custom Agents](#custom-agents) | [Privacy](#privacy-and-boundaries)
+
+**Search fit:** built for teams searching for AI decision support / AI advisory workspace, multi-agent discussion / agent collaboration, and business strategy / strategic analysis tools.
+
+中文搜索：AI决策、AI顾问、多智能体讨论、智能体协作、商业策略、战略分析、决策辅助。
+
+**Quick start:** run `.\Start-Roundtable-UI-Only.cmd` from the repository root, then open `http://localhost:3001/roundtable`.
+
+**Trust boundary:** AgentHive provides a local Next.js workspace and replaceable Agent Skill templates; private business materials stay in local `context/`, credentials are not included, and executive-style agents are not official endorsements.
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/EthanYoQ/AgentHive?style=flat&logo=github&logoColor=white)
 ![GitHub forks](https://img.shields.io/github/forks/EthanYoQ/AgentHive?style=flat&logo=github&logoColor=white)

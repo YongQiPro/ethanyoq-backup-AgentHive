@@ -1,12 +1,14 @@
 <div align="center">
 
-# AgentHive - AI Roundtable Workspace / AI 圆桌智策工作台
+# AgentHive - AI决策与多智能体讨论工作台
 
-**AgentHive 是本地运行的 executive AI workspace：面向创始人、产品负责人和商业策略团队，把一个业务问题交给可配置的多智能体圆桌，让不同 Agent 围绕观点、证据、风险和结论进行结构化讨论。**
+**AgentHive 是本地运行的 AI 决策、AI 顾问和多智能体讨论工作台：面向创始人、产品负责人和商业策略团队，把一个业务问题交给可配置的 Agent 圆桌，让不同角色围绕观点、证据、风险和结论进行结构化讨论。**
 
 [English](README.en.md) | [截图](#界面预览) | [快速开始](#快速开始) | [自定义-agent](#自定义-agent) | [隐私与边界](#隐私与边界)
 
-**搜索意图：** 适合正在寻找 `AI roundtable`、`AI executive roundtable`、`AI advisory board`、`multi-agent strategy`、`多智能体讨论`、`AI 圆桌会议`、`商业策略 Agent`、`executive AI workspace` 的团队。
+**搜索意图：** 适合正在找 AI决策/AI顾问、多智能体讨论/智能体协作、商业策略/战略分析工具 的团队。
+
+English: a local AI roundtable workspace for multi-agent strategy discussions, evidence requests, decision support, and agent skill prototyping.
 
 **快速开始：** 在仓库根目录运行 `.\Start-Roundtable-UI-Only.cmd`，然后打开 `http://localhost:3001/roundtable`。
 

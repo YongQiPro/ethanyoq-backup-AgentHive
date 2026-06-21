@@ -1,12 +1,14 @@
 <div align="center">
 
-# AgentHive - AI Roundtable Workspace for Multi-Agent Strategy
+# AgentHive - AI Decision and Multi-Agent Strategy Workspace
 
-**AgentHive is a local executive AI workspace for founders, product leaders, and strategy teams: give one business question to configurable agents and let them reason through views, evidence, risks, and final synthesis.**
+**AgentHive is a local AI decision, AI advisor, and multi-agent strategy workspace for founders, product leaders, and business teams: give one question to configurable agents and let them reason through views, evidence, risks, and final synthesis.**
 
 [中文](README.md) | [Screenshots](#screenshots) | [Quick Start](#quick-start) | [Custom Agents](#custom-agents) | [Privacy](#privacy-and-boundaries)
 
-**Search fit:** built for teams looking for `AI roundtable`, `AI executive roundtable`, `AI advisory board`, `multi-agent strategy`, `multi-agent discussion`, `business strategy agent`, `strategy discussion agent`, and `executive AI workspace`.
+**Search fit:** built for teams searching for AI decision support / AI advisory workspace, multi-agent discussion / agent collaboration, and business strategy / strategic analysis tools.
+
+中文搜索：AI决策、AI顾问、多智能体讨论、智能体协作、商业策略、战略分析、决策辅助。
 
 **Quick start:** run `.\Start-Roundtable-UI-Only.cmd` from the repository root, then open `http://localhost:3001/roundtable`.
 

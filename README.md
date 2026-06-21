@@ -1,10 +1,16 @@
 <div align="center">
 
-# AgentHive
+# AgentHive - AI Roundtable Workspace / AI 圆桌智策工作台
 
-**圆桌智策工作台：把一个商业问题交给一组可配置 AI Agent，让它们围绕观点、证据、风险和结论进行结构化讨论。**
+**AgentHive 是本地运行的 executive AI workspace：面向创始人、产品负责人和商业策略团队，把一个业务问题交给可配置的多智能体圆桌，让不同 Agent 围绕观点、证据、风险和结论进行结构化讨论。**
 
 [English](README.en.md) | [截图](#界面预览) | [快速开始](#快速开始) | [自定义-agent](#自定义-agent) | [隐私与边界](#隐私与边界)
+
+**搜索意图：** 适合正在寻找 `AI roundtable`、`AI executive roundtable`、`AI advisory board`、`multi-agent strategy`、`多智能体讨论`、`AI 圆桌会议`、`商业策略 Agent`、`executive AI workspace` 的团队。
+
+**快速开始：** 在仓库根目录运行 `.\Start-Roundtable-UI-Only.cmd`，然后打开 `http://localhost:3001/roundtable`。
+
+**边界：** 本仓库提供本地 Next.js 工作台和可替换 Agent Skill 模板；真实业务材料默认留在本机 `context/`，仓库不包含 API key、Cookie 或登录凭据，商业领袖风格 Agent 不代表官方授权或背书。
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/EthanYoQ/AgentHive?style=flat&logo=github&logoColor=white)
 ![GitHub forks](https://img.shields.io/github/forks/EthanYoQ/AgentHive?style=flat&logo=github&logoColor=white)

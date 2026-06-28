@@ -2,17 +2,19 @@
 
 # AgentHive - AI决策与多智能体讨论工作台
 
-**AgentHive 是本地运行的 AI 决策、AI 顾问和多智能体讨论工作台：面向创始人、产品负责人和商业策略团队，把一个业务问题交给可配置的 Agent 圆桌，让不同角色围绕观点、证据、风险和结论进行结构化讨论。**
+**AgentHive 是本地运行的 AI 决策工具、AI 顾问和多智能体讨论工作台：面向创始人、产品负责人和商业策略团队，把一个业务问题交给可配置的 Agent 圆桌，让不同角色围绕观点、证据、风险和结论进行结构化讨论。**
 
 [English](README.en.md) | [截图](#界面预览) | [快速开始](#快速开始) | [自定义-agent](#自定义-agent) | [隐私与边界](#隐私与边界)
 
-**搜索意图：** 适合正在找 AI决策/AI顾问、多智能体讨论/智能体协作、商业策略/战略分析工具 的团队。
+**搜索意图：** 适合正在找 AI决策、AI顾问、多智能体、多智能体讨论、智能体协作、商业策略和战略分析工具的团队。
 
 English: a local AI roundtable workspace for multi-agent strategy discussions, evidence requests, decision support, and agent skill prototyping.
 
 **快速开始：** 在仓库根目录运行 `.\Start-Roundtable-UI-Only.cmd`，然后打开 `http://localhost:3001/roundtable`。
 
 **边界：** 本仓库提供本地 Next.js 工作台和可替换 Agent Skill 模板；真实业务材料默认留在本机 `context/`，仓库不包含 API key、Cookie 或登录凭据，商业领袖风格 Agent 不代表官方授权或背书。
+
+**典型场景：** 用多个 Agent 压测一个产品方向；让反方、市场、执行和总结角色讨论商业策略；把会议纪要和调研材料放进本地 `context/`，要求 AI 圆桌标注事实边界、未证实假设和下一步验证问题。
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/EthanYoQ/AgentHive?style=flat&logo=github&logoColor=white)
 ![GitHub forks](https://img.shields.io/github/forks/EthanYoQ/AgentHive?style=flat&logo=github&logoColor=white)

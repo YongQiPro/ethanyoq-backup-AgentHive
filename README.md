@@ -1,5 +1,7 @@
 <div align="center">
 
+![AgentHive AI 圆桌讨论工作台](docs/images/product-hero-zh.png)
+
 # AgentHive - AI决策与多智能体讨论工作台
 
 **AgentHive 是本地运行的 AI 决策工具、AI 顾问和多智能体讨论工作台：面向创始人、产品负责人和商业策略团队，把一个业务问题交给可配置的 Agent 圆桌，让不同角色围绕观点、证据、风险和结论进行结构化讨论。**

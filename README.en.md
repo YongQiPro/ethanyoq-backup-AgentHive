@@ -1,5 +1,7 @@
 <div align="center">
 
+![AgentHive AI Roundtable Workspace](docs/images/product-hero-en.png)
+
 # AgentHive - AI Decision and Multi-Agent Strategy Workspace
 
 **AgentHive is a local AI decision, AI advisor, and multi-agent strategy workspace for founders, product leaders, and business teams: give one question to configurable agents and let them reason through views, evidence, risks, and final synthesis.**

@@ -1,0 +1,63 @@
+{
+  "name": "agenthive-desktop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AgentHive desktop workbench for the local roundtable runtime.",
+  "main": "main.cjs",
+  "scripts": {
+    "prepare:roundtable": "node scripts/prepare-roundtable.cjs",
+    "verify:resources": "node scripts/verify-desktop-package.cjs",
+    "test": "node --test test/*.test.cjs",
+    "start": "npm run prepare:roundtable && electron .",
+    "build:unpacked": "npm run prepare:roundtable && npm run verify:resources && electron-builder --win dir --x64 --publish never",
+    "build:win": "npm run prepare:roundtable && npm run verify:resources && electron-builder --win nsis --x64 --publish never",
+    "build:portable": "npm run prepare:roundtable && npm run verify:resources && electron-builder --win dir --x64 --publish never && node scripts/package-portable.cjs"
+  },
+  "devDependencies": {
+    "electron": "^42.3.3",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.agenthive.desktop",
+    "productName": "AgentHive",
+    "artifactName": "AgentHive-Setup-${version}-${arch}.${ext}",
+    "asar": true,
+    "files": [
+      "main.cjs",
+      "lib/**/*.cjs",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "resources/roundtable",
+        "to": "roundtable"
+      },
+      {
+        "from": "resources/defaults/roundtable-skills",
+        "to": "defaults/roundtable-skills"
+      },
+      {
+        "from": "resources/next-runtime-modules",
+        "to": "next-runtime-modules"
+      }
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "assets/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "AgentHive"
+    }
+  }
+}

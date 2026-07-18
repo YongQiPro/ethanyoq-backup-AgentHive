@@ -179,7 +179,7 @@ const roleMarkers: Record<string, string[]> = {
     '区域周会',
     '供应链',
     '复制',
-    'customer-level台账',
+    '医院级台账',
     '区域周会',
     '产品线单品插队',
     '组合库存',
@@ -247,7 +247,7 @@ export function judgeRoundtableOutput(input: JudgeInput): JudgeResult {
     '找出',
   ]);
   const hasChallenge = input.targetAgentIds.length > 0 || hasAny(content, ['不是', '别', '先别', '问题是', '断了', '挑战', '反对']);
-  const hasCommercial = hasAny(content, ['客户', '成本', '商业', '采用', '客户', '渠道', '投入', '现金流', '资源', '规模']);
+  const hasCommercial = hasAny(content, ['客户', '成本', '商业', '采用', '医院', '渠道', '投入', '现金流', '资源', '规模']);
   const tooGeneric = content.length < 40 || !hasAny(content, ['证据', '客户', '成本', '采用', '资源', '指标', '风险', '验证']);
   const personaHits = markerHits(input);
   const weakPersona = isKnownPersona(input) && personaHits < 2;

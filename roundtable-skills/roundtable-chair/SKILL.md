@@ -53,7 +53,7 @@ description: |
 ## 项目来源
 
 - `multi_agent_roundtable_prd_v0.2.md`：示例角色模板、Fact Pack、阶段化圆桌、证据边界。
-- `docs/specs/2026-06-09-roundtable-p0-design.md`：P0 受控上下文注入与角色配置要求。
+- `openagents/docs/superpowers/specs/2026-06-09-roundtable-p0-design.md`：P0 受控上下文注入与角色配置要求。
 
 ---
 

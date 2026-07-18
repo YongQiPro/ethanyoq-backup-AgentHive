@@ -98,6 +98,15 @@ AgentHive 不是一个固定角色的聊天机器人集合，而是一个面向�
 
 ## <img src="https://api.iconify.design/lucide:rocket.svg?color=%230f172a" width="20" alt=""> 快速开始
 
+### 方式零：Windows 桌面版（免命令行）
+
+从 [GitHub Releases](https://github.com/EthanYoQ/AgentHive/releases/latest) 下载以下任一文件：
+
+- `AgentHive-Setup-<version>-x64.exe`：安装版，按安装向导完成安装后从开始菜单或桌面启动。
+- `AgentHive-Portable-<version>-x64.zip`：免安装版，解压后保持 `AgentHive` 文件夹完整，双击 `AgentHive.exe`。
+
+桌面版会在本机随机的回环地址启动内部服务，不需要也不会暴露固定的 `localhost` 地址。背景材料、角色 Skill 副本、讨论历史和日志保存在当前 Windows 用户的数据目录，不会写入安装文件夹。
+
 ### 方式一：Windows 启动脚本
 
 在仓库根目录运行：
@@ -126,17 +135,19 @@ npm run dev
 http://localhost:3001/roundtable
 ```
 
-## <img src="https://api.iconify.design/lucide:square-terminal.svg?color=%230f172a" width="20" alt=""> 可选运行时
+## <img src="https://api.iconify.design/lucide:square-terminal.svg?color=%230f172a" width="20" alt=""> 运行时依赖
 
-AgentHive 前端可以独立运行。若要让讨论 Agent 调用外部运行时，需要在本机额外配置对应 CLI：
+桌面应用已内置 Electron 和前端运行时，但不会捆绑任何模型供应商的 CLI、登录状态、API key 或 Tavily 密钥。要运行发布的默认角色组合，请在**同一 Windows 用户**下安装并登录以下依赖：
 
-| 运行时 | 用途 | 是否内置凭据 |
-| --- | --- | --- |
-| Codex CLI | Codex Agent 发言或执行本地任务 | 否 |
-| Claude Code CLI | Claude Agent 发言或执行本地任务 | 否 |
-| Tavily CLI | 联网检索和证据补充 | 否 |
+| 依赖 | 是否需要 | 应用内用途 | 自检命令 |
+| --- | --- | --- | --- |
+| [Codex CLI](https://learn.chatgpt.com/docs/codex/cli) | 必需 | 驱动标记为 `Codex CLI` 的讨论角色 | `codex --version` |
+| [Claude Code CLI](https://code.claude.com/docs/en/overview) | 必需 | 驱动标记为 `Claude Code CLI` 的讨论角色 | `claude --version` |
+| [Tavily CLI](https://docs.tavily.com/documentation/quickstart) | 证据联网检索必需 | 让后台证据 Agent 搜索公开网页并回填可追溯证据 | `tvly --status` |
 
-请在自己的机器上单独安装、登录和管理这些工具。仓库不包含 API key、Cookie 或任何登录凭据。
+建议安装和登录顺序：先按各官方文档安装 Codex CLI 与 Claude Code CLI 并完成账号登录；需要联网补证时，再安装 Tavily CLI（可用 `uv tool install tavily-cli` 或 `pip install tavily-cli`）并执行 `tvly login` 或配置 `TAVILY_API_KEY`。如果缺少 Codex 或 Claude，使用该运行时的角色无法生成发言；如果缺少 Tavily，圆桌仍可使用本地 `context/` 材料，但不能完成公开网页补证。
+
+桌面版中可按 `Alt` 打开菜单，然后选择 `AgentHive > Runtime Dependencies` 检查三个 CLI 是否被检测到。源码运行还需要 Node.js 20 或更高版本和 npm。
 
 ## <img src="https://api.iconify.design/lucide:box.svg?color=%230f172a" width="20" alt=""> 项目结构
 
@@ -144,6 +155,7 @@ AgentHive 前端可以独立运行。若要让讨论 Agent 调用外部运行时
 AgentHive/
 |-- context/                      # 本地背景材料目录，默认不提交真实业务资料
 |-- docs/assets/screenshots/       # README 截图
+|-- packages/agenthive-desktop/    # Windows 桌面版与 ZIP 构建脚本
 |-- roundtable-skills/             # Agent Skill 模板
 |-- scripts/                       # 启动脚本
 |-- workspace/frontend/            # Roundtable Web 前端

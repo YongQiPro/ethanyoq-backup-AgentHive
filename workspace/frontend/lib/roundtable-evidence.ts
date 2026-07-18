@@ -31,7 +31,7 @@ const brokerDemoAgentId = 'evidence-broker-demo';
 const externalResearchSourceRef = 'Evidence Broker demo: external research required; no source fetched';
 
 const userDataPattern =
-  /ExampleCo|TARGET_SEGMENT|OTHER_SEGMENT|segment_code|sub_segment_code|SEGMENT_CODE|SUB_SEGMENT_CODE|account_id|ACCOUNT_ID|FY26|YTD|销售|台账|customer-level|Top\s*客户|TOP\s*客户|归属|覆盖客户|零销售|Product A|Product B|ProductA|ProductB|SKU|剂型|客户下一单|组合毛利|销售小时|内部|客户级|大区|专员|负责人/i;
+  /内部数据|用户上传|销售|台账|订单|客户级|账户级|门店级|医院级|覆盖|库存|采购订单|采购台账|毛利|成本|收入|预算|负责人|组织架构|区域|渠道|CRM|SKU|剂型/i;
 const externalResearchPattern = /带量采购|医保|政策|准入|合规|省份|监管|集采/;
 const marketResearchPattern = /市场|竞品|客户|支付意愿|复购|获客|增长|TAM|SAM|SOM|渠道|价格/i;
 const medicalResearchPattern = /医学|临床|适应症|指南|RCT|真实世界|疗效|安全性|药品|药物|患者|血液|移植|ICU|抗感染|真菌/i;
@@ -67,7 +67,7 @@ function classifyEvidenceRequest(request: string): EvidenceClassification {
     return {
       status: 'needs_user_data',
       summary:
-        '该请求需要内部数据或用户上传，如销售台账、客户级订单、customer-level记录或毛利明细；本地模拟未联网，不能编造为已证实结论。',
+        '该请求需要内部数据或用户上传，如销售台账、客户级订单、医院级记录或毛利明细；本地模拟未联网，不能编造为已证实结论。',
     };
   }
 

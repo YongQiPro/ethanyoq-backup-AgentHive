@@ -541,7 +541,7 @@ function scrubProtocolLanguage(value: string): string {
 
 function isProductEquivalenceEvidenceBoundary(value: string): boolean {
   const compact = value.replace(/\s+/g, '');
-  return /(?:Product C|Product C).{0,18}ProductC.{0,24}(?:同一|等同|对应|同名|确认|证据|未证实|仍需|需要)|ProductC.{0,24}(?:Product C|Product C).{0,24}(?:同一|等同|对应|同名|确认|证据|未证实|仍需|需要)/i.test(compact);
+  return /(?:苏普生|舒普深).{0,18}Sulperazon.{0,24}(?:同一|等同|对应|同名|确认|证据|未证实|仍需|需要)|Sulperazon.{0,24}(?:苏普生|舒普深).{0,24}(?:同一|等同|对应|同名|确认|证据|未证实|仍需|需要)/i.test(compact);
 }
 
 function hasPriorProductEquivalenceBoundary(state: RoundtableState): boolean {
@@ -674,20 +674,6 @@ function unique(values: string[]): string[] {
   return next;
 }
 
-function outputIsTargetSegmentLocalEvidence(output: NormalizedEvidenceRuntimeOutput): boolean {
-  return output.sourceRefs.some((ref) => /targetSegment_four_product_coverage_amount_intermittent_zero_lists\.json/i.test(ref)) ||
-    output.facts.some((fact) => /TARGET_SEGMENT\s+(ProductA|ProductB)|TARGET_SEGMENT主数据客户/i.test(fact.content + fact.source));
-}
-
-function taskCoveredByTargetSegmentLocalEvidence(
-  task: RoundtableState['evidenceTasks'][number],
-  plan: RoundtableEvidenceRuntimePlan,
-): boolean {
-  return task.assignedAgentIds.includes(plan.agentId) &&
-    /TARGET_SEGMENT|segment_code|SEGMENT_CODE/i.test(task.request) &&
-    /ProductA|ProductB|Product A|Product B|四个产品|客户|零销售|Top\s*客户|月趋势|覆盖/i.test(task.request);
-}
-
 export function markEvidenceTaskResearching(
   state: RoundtableState,
   plan: RoundtableEvidenceRuntimePlan,
@@ -734,11 +720,10 @@ export function applyRuntimeEvidenceResult(
   }
 
   const timestamp = new Date().toISOString();
-  const closesEquivalentTargetSegmentTasks = outputIsTargetSegmentLocalEvidence(output);
   return {
     ...nextState,
     evidenceTasks: nextState.evidenceTasks.map((item) =>
-      item.id === plan.evidenceTaskId || (closesEquivalentTargetSegmentTasks && taskCoveredByTargetSegmentLocalEvidence(item, plan))
+      item.id === plan.evidenceTaskId
         ? {
           ...item,
           status: output.status === 'researched' || addedFactIds.length > 0 ? 'researched' : output.status,
@@ -818,8 +803,8 @@ export function createDemoRuntimeOutput(plan: RoundtableRuntimePlan): Normalized
     statement: '这件事值得往前推，但先别扩大战线。支持理由、执行边界和验证问题必须放在同一张桌面上，否则大胆想法很快会变成口号。',
     mention: `${targetText}我想补充一个相关视角：先明确目标客户和证据边界，再讨论资源投入。`,
     reply: `${targetText}上一轮问题说到关键处，我会把主张收窄：先做小范围验证，再根据事实包决定是否扩大投入。`,
-    challenge: `${targetText}这个假设现在太轻。如果没有客户采用、政策约束和现场执行证据，它仍属于未证实判断。`,
-    evidence_request: `${targetText}先把政策边界、客户采用意愿、执行约束和样本来源补齐；没有这些，讨论不能进入承诺。`,
+    challenge: `${targetText}这个假设现在太轻。如果没有医院采用、政策约束和现场执行证据，它仍属于未证实判断。`,
+    evidence_request: `${targetText}先把政策边界、医院采用意愿、执行约束和样本来源补齐；没有这些，讨论不能进入承诺。`,
     synthesis: '我先收束：保留可快速验证的大胆假设，把反对意见、关键风险和下一步证据请求留在台面上。',
     user_interjection: '用户插话',
   };

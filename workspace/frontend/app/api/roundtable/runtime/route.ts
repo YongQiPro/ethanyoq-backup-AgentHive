@@ -50,8 +50,6 @@ export async function POST(request: Request) {
     const startedAt = Date.now();
     const localEvidenceOutput = resolveLocalEvidenceRuntimeOutput({
       evidenceRequest: body.evidenceRequest,
-      agentName: body.agentName,
-      skillId: body.roleAgent?.skillId,
     });
     if (localEvidenceOutput) {
       return NextResponse.json({

@@ -127,6 +127,9 @@ function resolveEvidencePath(path?: string): string | undefined {
     isAbsolute(path) ? path : join(runtimeCwd, path),
     isAbsolute(path) ? path : join(process.cwd(), path),
   ];
+  if (/^openagents\//i.test(normalized)) {
+    candidates.push(join(runtimeCwd, normalized.replace(/^openagents\//i, '')));
+  }
   return candidates.find((candidate) => existsSync(candidate)) || (isAbsolute(path) ? path : join(runtimeCwd, path));
 }
 

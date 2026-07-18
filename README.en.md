@@ -96,6 +96,15 @@ Export discussion record and decision synthesis
 
 ## <img src="https://api.iconify.design/lucide:rocket.svg?color=%230f172a" width="20" alt=""> Quick Start
 
+### Option 0: Windows desktop app (no command line)
+
+Download either asset from [GitHub Releases](https://github.com/EthanYoQ/AgentHive/releases/latest):
+
+- `AgentHive-Setup-<version>-x64.exe`: installer edition. Complete the setup wizard, then launch AgentHive from the desktop or Start menu.
+- `AgentHive-Portable-<version>-x64.zip`: portable edition. Extract it, keep the `AgentHive` folder intact, and run `AgentHive.exe`.
+
+The desktop app starts an internal service on a random loopback address. It does not require or expose a fixed `localhost` URL. Context, copied role Skills, discussion history, and logs remain in the current Windows user's app-data directory rather than the installation folder.
+
 ### Option 1: Windows launcher
 
 Run from the repository root:
@@ -124,17 +133,19 @@ Default URL:
 http://localhost:3001/roundtable
 ```
 
-## <img src="https://api.iconify.design/lucide:square-terminal.svg?color=%230f172a" width="20" alt=""> Optional Runtimes
+## <img src="https://api.iconify.design/lucide:square-terminal.svg?color=%230f172a" width="20" alt=""> Runtime Dependencies
 
-The AgentHive frontend can run on its own. To let discussion agents call external runtimes, configure the relevant CLIs locally:
+The desktop app bundles Electron and the frontend runtime, but it does not bundle model-provider CLIs, login state, API keys, or Tavily credentials. To run the default role set, install and authenticate these dependencies under the **same Windows user**:
 
-| Runtime | Purpose | Credentials included |
-| --- | --- | --- |
-| Codex CLI | Codex-powered agent turns and local task execution | No |
-| Claude Code CLI | Claude-powered agent turns and local task execution | No |
-| Tavily CLI | Web research and evidence collection | No |
+| Dependency | Required | In-app use | Health check |
+| --- | --- | --- | --- |
+| [Codex CLI](https://learn.chatgpt.com/docs/codex/cli) | Yes | Powers roles labelled `Codex CLI` | `codex --version` |
+| [Claude Code CLI](https://code.claude.com/docs/en/overview) | Yes | Powers roles labelled `Claude Code CLI` | `claude --version` |
+| [Tavily CLI](https://docs.tavily.com/documentation/quickstart) | Yes for web evidence research | Lets background evidence agents retrieve public-web sources with traceable evidence | `tvly --status` |
 
-Install, authenticate, and manage these tools on your own machine. This repository does not include API keys, cookies, or login credentials.
+Install and sign in to Codex CLI and Claude Code CLI using their official guides. For public-web evidence research, install Tavily CLI with `uv tool install tavily-cli` or `pip install tavily-cli`, then run `tvly login` or configure `TAVILY_API_KEY`. Missing Codex or Claude prevents the roles assigned to that runtime from generating turns. Missing Tavily still allows local `context/` materials, but disables public-web evidence collection.
+
+In the desktop app, press `Alt` to reveal the menu, then choose `AgentHive > Runtime Dependencies` to confirm the three CLIs are detected. Running the source checkout also requires Node.js 20+ and npm.
 
 ## <img src="https://api.iconify.design/lucide:box.svg?color=%230f172a" width="20" alt=""> Repository Layout
 
@@ -142,6 +153,7 @@ Install, authenticate, and manage these tools on your own machine. This reposito
 AgentHive/
 |-- context/                      # Local context files; real business data is ignored by default
 |-- docs/assets/screenshots/       # README screenshots
+|-- packages/agenthive-desktop/    # Windows desktop app and ZIP build scripts
 |-- roundtable-skills/             # Agent Skill templates
 |-- scripts/                       # Launch scripts
 |-- workspace/frontend/            # Roundtable web frontend
